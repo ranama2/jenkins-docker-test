@@ -1,14 +1,14 @@
 pipeline {
 	agent {
 		docker {
-			image 'centos'
+			image 'python'
 		}	
 	}
 	stages {
-		stage("check hostname of docker container") {
+		stage("run helloworld") {
 			steps {
 				sh """
-					cat /etc/hostname
+					python helloworld.py
 				"""
 			}
 		}
