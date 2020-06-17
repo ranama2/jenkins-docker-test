@@ -7,7 +7,7 @@ pipeline {
 		}	
 	}
 	stages {
-		stage{"check hostname of docker container"} {
+		stage("check hostname of docker container") {
 			steps {
 				sh """
 					cat /etc/hostname
