@@ -6,7 +6,6 @@ pipeline {
 			label 'generic'
 		}	
 	}
-}
 	stages {
 		stage{"check hostname of docker container"} {
 			steps {
@@ -16,3 +15,4 @@ pipeline {
 			}
 		}
 	}
+}
